@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-color: #353740;
+}
+
+nav {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.466);
+    text-align: center;
+}
+
+nav > a {
+   
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+main {
+    background-color: aliceblue;
+    position: relative;
+    top: 100px;
+    padding: 50px;
+    
+}
+/* imagens dos icones */
+
+.icone1 {
+    text-align: center;
+   
+}
+
+.icone2 {
+    text-align: center;
+}
+
+.icone3 {
+    text-align: center;
+}
+
+.icone4 {
+    text-align: center;
+}
+
+#email {
+    position: relative;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    
+}
+
+#cel {
+    position: relative;
+    bottom:20px;
+    width: 60px;
+    height: 60px;
+
+}
+
+#git {
+    /* position: relative; */
+    width: 60px;
+    height: 60px;
+    
+}
+
+#linke {
+    position: relative;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+/* paragrafos */
+.e-mail {
+    position: relative;
+    bottom: 30px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.celular {
+    position: relative;
+    bottom:20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clique-git {
+    /* position: relative; */
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clique-linke {
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
