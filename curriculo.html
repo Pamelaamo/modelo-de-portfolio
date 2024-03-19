@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página | Currículo</title>
+    <link rel="stylesheet" href="estilocurriculo.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo</h1>
+    </header>
+
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projeto.html">Projetos</a>
+            <a href="contato.html">Contato</a>
+            <a href="curriculo.html">Currículo</a>
+        </nav>
+    </section>
+
+    <main>
+    
+        <section id="botao">
+
+            <div>
+                <img src="img-curriculo.png" alt="imagem curriculo">
+            </div>
+
+            <div>
+                <button id="btnDownload">DOWNLOAD</button>
+            </div>
+
+    
+        </section>
+        
+    </main>
+
+    <script>
+
+        function downloadImage() {
+      // Defina o URL da imagem que será baixada
+            const imageUrl = 'imagem-curriculo.png';
+
+      // Obtém o nome da imagem a partir do URL (opcional)
+            const imageName = imageUrl.split('/').pop();
+
+      // Cria um elemento de link oculto
+            const element = document.createElement('a');
+            element.setAttribute('href', imageUrl);
+            element.setAttribute('download', imageName);
+
+      // Anexa o elemento ao corpo da página (necessário para funcionar em alguns navegadores)
+            document.body.appendChild(element);
+
+            // Simula o clique no link para iniciar o download
+            element.click();
+
+            // Remove o elemento depois do download (opcional)
+            document.body.removeChild(element);
+    }
+
+        // Adiciona um evento de clique ao botão para chamar a função de downloadImage
+        document.getElementById('btnDownload').addEventListener('click', downloadImage);
+
+    </script>
+
+        
+</body>
+</html>
